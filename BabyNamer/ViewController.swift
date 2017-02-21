@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         nameLabel.isHidden = false
         nameLabel.adjustsFontSizeToFitWidth = true
         // TODO: hide the "no name" image
-        noNameImage?.isHidden = true
+        noNameImage.isHidden = true
     }
     
     @IBAction func genderChanged(_ sender: Any) {
