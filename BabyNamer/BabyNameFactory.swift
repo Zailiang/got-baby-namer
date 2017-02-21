@@ -25,6 +25,11 @@ class BabyNameFactory {
     
     func generateNameForGender(gender: Gender) -> BabyName? {
         // code here to randomly select name for specified gender
-        return nil
+        if gender == Gender.Unknown {
+            return nil
+        }
+        let names = babyNames.filter{ $0.gender == gender }
+        let i = Int(arc4random_uniform(UInt32(names.count)))
+        return names[i]
     }
 }

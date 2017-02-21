@@ -23,7 +23,7 @@ class BabyNamerTests: XCTestCase {
     
     // TODO - get this test to pass
     func testBabyNameFactory() {
-        let babyNameFactory = BabyNameFactory();
+        let babyNameFactory = BabyNameFactory()
         let babyName = babyNameFactory.generateNameForGender(gender: Gender.Male)
         XCTAssert(babyName != nil)
         XCTAssert(babyName!.getName() != nil)
